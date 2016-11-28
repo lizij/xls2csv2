@@ -1,8 +1,5 @@
-package com.xlscsv.converter;
+import com.xlscsv.converter.Converter;
 
-/**
- * Created by Lizij on 2016/11/28.
- */
 public class TestMain {
     public static void main(String[] args) throws Exception{
         String basePath = System.getProperty("user.dir");

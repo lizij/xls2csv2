@@ -1,6 +1,4 @@
-package com.xlscsv.converter; /**
- * Created by Lizij on 2016/11/28.
- */
+package com.xlscsv.converter;
 import com.opencsv.CSVReader;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -12,16 +10,16 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 class CsvToXls {
-    public CsvToXls(){
+    CsvToXls(){
 
     }
 
-    public void process(String inputFileName, String outputFilePath) throws FileNotFoundException, IOException{
+    void process(String inputFileName, String outputFilePath) throws IOException{
         int i=0;
         String s[];
         //ArrayList list= new ArrayList<String>();
         Workbook wb= new HSSFWorkbook();
-        Sheet sh= (Sheet) wb.createSheet("Sheet1");
+        Sheet sh= wb.createSheet("Sheet1");
         Row row;
         Cell cell;
 
@@ -38,7 +36,9 @@ class CsvToXls {
         }
         catch(FileNotFoundException e){
             System.out.println("FileNotFound!");}
-        catch (IOException e){}
+        catch (IOException e){
+            e.printStackTrace();
+        }
 
         String outputFileName = outputFilePath + ".xls";
         FileOutputStream fout= new FileOutputStream(outputFileName);

@@ -4,9 +4,8 @@ import org.apache.poi.openxml4j.opc.*;
 
 import java.io.File;
 
-class Converter {
+public class Converter {
     public static void convert(String fileName, String outputPath, int minColumns) throws Exception {
-//        String fileName = "asdf.csv"
         File inputFile = new File(fileName);
         String fileNameNoEx = getFileNameNoEx(inputFile.getName());
         if (!inputFile.exists()) {
@@ -14,8 +13,7 @@ class Converter {
             return;
         }
 
-//        String outputPath = "D:\\Lizij\\Document\\实验室项目\\其他\\xls2csv2\\";
-        OutputDispatcher dispatcher = null;
+        OutputDispatcher dispatcher;
 
         if (fileName.endsWith("xls") || fileName.endsWith("xlsx")) {
             dispatcher = new PerSheetOutputDispatcher(outputPath + fileNameNoEx);
