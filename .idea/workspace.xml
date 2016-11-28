@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="089d0c3c-6ad7-490f-8176-a61225d7b403" name="Default" comment="201611282044">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xls2csv2/com/xlscsv/converter/TestMain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test1.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test2Sheet1.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test2Sheet2.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test2Sheet3.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test3Sheet1.csv" afterPath="" />
+    <list default="true" id="089d0c3c-6ad7-490f-8176-a61225d7b403" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/xls2csv2/com/xlscsv/converter/Converter.class" afterPath="$PROJECT_DIR$/out/production/xls2csv2/com/xlscsv/converter/Converter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/xls2csv2/com/xlscsv/converter/CsvToXls.class" afterPath="$PROJECT_DIR$/out/production/xls2csv2/com/xlscsv/converter/CsvToXls.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/xlscsv/converter/Converter.java" afterPath="$PROJECT_DIR$/src/com/xlscsv/converter/Converter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/xlscsv/converter/CsvToXls.java" afterPath="$PROJECT_DIR$/src/com/xlscsv/converter/CsvToXls.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/xlscsv/converter/TestMain.java" afterPath="$PROJECT_DIR$/src/TestMain.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -656,12 +647,20 @@
       <updated>1480301438105</updated>
       <workItem from="1480301439842" duration="4339000" />
       <workItem from="1480315910508" duration="5941000" />
-      <workItem from="1480336779810" duration="596000" />
+      <workItem from="1480336779810" duration="652000" />
     </task>
+    <task id="LOCAL-00001" summary="201611282044">
+      <created>1480337404215</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1480337404215</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10876000" />
+    <option name="totallyTimeSpent" value="10932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
