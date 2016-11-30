@@ -10,21 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="089d0c3c-6ad7-490f-8176-a61225d7b403" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xls2csv2/TestMain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xls2csv2/com/xlscsv/converter/Converter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xls2csv2/com/xlscsv/converter/CsvToXls.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xls2csv2/com/xlscsv/converter/OutputDispatcher.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xls2csv2/com/xlscsv/converter/PerSheetOutputDispatcher.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xls2csv2/com/xlscsv/converter/StandardOutputDispatcher.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xls2csv2/com/xlscsv/converter/XlsToCsv.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xls2csv2/com/xlscsv/converter/XlsxToCsv$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xls2csv2/com/xlscsv/converter/XlsxToCsv$MyXSSFSheetHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xls2csv2/com/xlscsv/converter/XlsxToCsv$xssfDataType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xls2csv2/com/xlscsv/converter/XlsxToCsv.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TestMain.java" afterPath="$PROJECT_DIR$/src/TestMain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xls2csv2.iml" afterPath="$PROJECT_DIR$/xls2csv2.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -624,7 +610,7 @@
       <workItem from="1480337586273" duration="490000" />
       <workItem from="1480490626630" duration="7157000" />
       <workItem from="1480501214200" duration="166000" />
-      <workItem from="1480501394555" duration="495000" />
+      <workItem from="1480501394555" duration="566000" />
     </task>
     <task id="LOCAL-00001" summary="201611282044">
       <created>1480337404215</created>
@@ -668,11 +654,18 @@
       <option name="project" value="LOCAL" />
       <updated>1480497774669</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="201611301831">
+      <created>1480501906771</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1480501906771</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19360000" />
+    <option name="totallyTimeSpent" value="19431000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -737,7 +730,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="201611282044" />
     <MESSAGE value="201611301711" />
-    <option name="LAST_COMMIT_MESSAGE" value="201611301711" />
+    <MESSAGE value="201611301831" />
+    <option name="LAST_COMMIT_MESSAGE" value="201611301831" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
