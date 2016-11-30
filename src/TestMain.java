@@ -31,7 +31,7 @@ public class TestMain {
         if(args.length >= 4)
             sheetName = args[3];
 
-        System.out.println("Start converting");
+//        System.out.println("Start converting");
         Converter.convert(inputFileName, outputFileName, minColumns, sheetName);
 //        convertAll();
     }
