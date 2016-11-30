@@ -5,7 +5,7 @@ import org.apache.poi.openxml4j.opc.*;
 import java.io.File;
 
 public class Converter {
-    public static void convert(String fileName, String outputPath, int minColumns) throws Exception {
+    public static void convert(String fileName, String outputPath, int minColumns, String... sheetName) throws Exception {
         File inputFile = new File(fileName);
         String fileNameNoEx = getFileNameNoEx(inputFile.getName());
         if (!inputFile.exists()) {
@@ -33,14 +33,21 @@ public class Converter {
             XlsToCsv xls2csv = new XlsToCsv(fileName, dispatcher, minColumns);
             xls2csv.process();
         } else if (fileName.endsWith("csv")){
-            new CsvToXls().process(fileName, outputPath + fileNameNoEx);
+            String sn;
+            if(sheetName != null && sheetName.length == 1){
+                sn = sheetName[0];
+            }else{
+                sn = "Sheet1";
+            }
+//            new CsvToXls().process(fileName, outputPath + fileNameNoEx, sn);
+            new CsvToXls().process(fileName, outputPath, sn);
         }
         else {
             throw new Exception("Unrecognized file type");
         }
     }
 
-    private static String getFileNameNoEx(String filename) {
+    public static String getFileNameNoEx(String filename) {
         if ((filename != null) && (filename.length() > 0)) {
             int dot = filename.lastIndexOf('.');
             if ((dot >-1) && (dot < (filename.length()))) {

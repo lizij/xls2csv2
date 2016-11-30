@@ -1,9 +1,8 @@
 package com.xlscsv.converter;
 import com.opencsv.CSVReader;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.FileReader;
-import java.io.IOException;
+
+import java.io.*;
+
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
@@ -14,12 +13,19 @@ class CsvToXls {
 
     }
 
-    void process(String inputFileName, String outputFilePath) throws IOException{
+    void process(String inputFileName, String outputFilePath, String sheetName) throws IOException{
         int i=0;
         String s[];
-        //ArrayList list= new ArrayList<String>();
-        Workbook wb= new HSSFWorkbook();
-        Sheet sh= wb.createSheet("Sheet1");
+        Workbook wb;
+        String outputFileName = outputFilePath + ".xls";
+        File outputFile = new File(outputFileName);
+        if(outputFile.exists()){
+            wb = new HSSFWorkbook(new FileInputStream(outputFile));
+        }else{
+            wb = new HSSFWorkbook();
+        }
+//        Sheet sh= wb.createSheet("Sheet1");
+        Sheet sh = wb.createSheet(sheetName);
         Row row;
         Cell cell;
 
@@ -40,10 +46,10 @@ class CsvToXls {
             e.printStackTrace();
         }
 
-        String outputFileName = outputFilePath + ".xls";
         FileOutputStream fout= new FileOutputStream(outputFileName);
         wb.write(fout);
         fout.close();
+        wb.close();
 //        System.out.println("Ok!");
     }
 }
